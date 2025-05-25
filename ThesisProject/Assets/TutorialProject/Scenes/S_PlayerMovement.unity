@@ -18807,6 +18807,10 @@ PrefabInstance:
       propertyPath: movementSpeed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6274692963552327719, guid: fcd332ab5d878d34cb4e74aa1fe7fe61, type: 3}
+      propertyPath: startMovementSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 9050557809827418289, guid: fcd332ab5d878d34cb4e74aa1fe7fe61, type: 3}
       propertyPath: m_Name
       value: S_PlayerCharacterPrefab
