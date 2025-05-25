@@ -15416,7 +15416,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -22238,6 +22238,8 @@ GameObject:
   - component: {fileID: 2596968334793558581}
   - component: {fileID: 5038359516735546171}
   - component: {fileID: 5038359516735546170}
+  - component: {fileID: 5038359516735546172}
+  - component: {fileID: 5038359516735546173}
   m_Layer: 0
   m_Name: S_PlayerCharacterPrefab
   m_TagString: Player
@@ -22705,7 +22707,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 350168544009195219}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a38e390c1dd451499336e84711a3ac2, type: 3}
   m_Name: 
@@ -23029,7 +23031,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 350168544009195219}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 245dbc0116b9130428bae10d2eb1d2e8, type: 3}
   m_Name: 
@@ -23938,7 +23940,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 1311cfd6ee8174d4f96cf6d594b1aa77, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: 0dc4f467d308a794ca3a1ddec8c33468, type: 3}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -24297,6 +24299,36 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5038359516735546172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350168544009195219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7785d7e8aeae1184abe485fce145279e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charachterRB: {fileID: 0}
+  movementSpeed: 5
+  startMovementSpeed: 5
+  jumpForce: 200
+--- !u!114 &5038359516735546173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350168544009195219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe910e7d2fae10e4a9ac1b36c8f90084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseSens: 20
+  playerCamera: {fileID: 1543898566}
 --- !u!33 &5078982423501285572
 MeshFilter:
   m_ObjectHideFlags: 0

@@ -27,11 +27,10 @@ public class PlayerMovement : MonoBehaviour
         Vector3 newVelocity = new Vector3(move.x * movementSpeed, charachterRB.linearVelocity.y, move.z * movementSpeed);
         charachterRB.linearVelocity = newVelocity;
         isJumping = false;
-        isSprinting = false;
-        while (!isSprinting) 
+        if (!isSprinting) 
            movementSpeed = startMovementSpeed;
-        
-        movementSpeed = startMovementSpeed * 2;
+        else
+            movementSpeed = startMovementSpeed * 2;
 
     }
 
@@ -52,6 +51,12 @@ public class PlayerMovement : MonoBehaviour
     private void OnSprint(InputValue input)
     {
         isSprinting = true;
+        
+    }
+
+    private void OnSprintStop(InputValue input)
+    {
+        isSprinting = false;
     }
 
     // Simple ground check using collision
